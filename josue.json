@@ -1,0 +1,307 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/filter_game_developer.feature:6",
+      "name": "Filter games that was developed by Nintendo",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_developer.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/filter_games.py:9"
+          },
+          "name": "a set of games",
+          "result": {
+            "duration": 0.00030732154846191406,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "NAME",
+              "RELEASE DATE",
+              "DEVELOPER",
+              "RATE"
+            ],
+            "rows": [
+              [
+                "The Witcher 3: Wild Hunt",
+                "2015",
+                "CD Projekt",
+                "M"
+              ],
+              [
+                "Splatoon",
+                "2016",
+                "Nintendo",
+                "T"
+              ],
+              [
+                "Super Smash Bros. Ultimate",
+                "2018",
+                "Bandai Namco Studios",
+                "E"
+              ],
+              [
+                "The Last of Us",
+                "2013",
+                "Naughty Dog",
+                "M"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_developer.feature:13",
+          "match": {
+            "arguments": [
+              {
+                "name": "study",
+                "value": "Nintendo"
+              }
+            ],
+            "location": "features/steps/filter_games.py:30"
+          },
+          "name": "the user enters the study: Nintendo",
+          "result": {
+            "duration": 0.00017714500427246094,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/filter_game_developer.feature:14",
+          "match": {
+            "arguments": [
+              {
+                "name": "criteria",
+                "value": "study"
+              }
+            ],
+            "location": "features/steps/filter_games.py:34"
+          },
+          "name": "the user search games by study",
+          "result": {
+            "duration": 0.00030493736267089844,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/filter_game_developer.feature:15",
+          "match": {
+            "arguments": [
+              {
+                "name": "total",
+                "value": "1"
+              }
+            ],
+            "location": "features/steps/filter_games.py:53"
+          },
+          "name": "1 games will match",
+          "result": {
+            "duration": 0.0001366138458251953,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/filter_game_developer.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/filter_games.py:58"
+          },
+          "name": "the names of these games are",
+          "result": {
+            "duration": 0.00010991096496582031,
+            "status": "passed"
+          },
+          "step_type": "then",
+          "table": {
+            "headings": [
+              "NAME"
+            ],
+            "rows": [
+              [
+                "Splatoon"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/filter_game_developer.feature:19",
+          "match": {
+            "arguments": [
+              {
+                "name": "message",
+                "value": "A game developed by Nintendo was found."
+              }
+            ],
+            "location": "features/steps/filter_games.py:70"
+          },
+          "name": "the following message is displayed: A game developed by Nintendo was found.",
+          "result": {
+            "duration": 8.535385131835938e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "gamesByDeveloper"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/filter_game_developer.feature:22",
+      "name": "Filter games that was developed by Nintendo",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_developer.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/filter_games.py:9"
+          },
+          "name": "a set of games",
+          "result": {
+            "duration": 9.226799011230469e-05,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "NAME",
+              "RELEASE DATE",
+              "DEVELOPER",
+              "RATE"
+            ],
+            "rows": [
+              [
+                "The Witcher 3: Wild Hunt",
+                "2015",
+                "CD Projekt",
+                "M"
+              ],
+              [
+                "Splatoon",
+                "2016",
+                "Nintendo",
+                "T"
+              ],
+              [
+                "Super Smash Bros. Ultimate",
+                "2018",
+                "Bandai Namco Studios",
+                "E"
+              ],
+              [
+                "The Last of Us",
+                "2013",
+                "Naughty Dog",
+                "M"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_developer.feature:29",
+          "match": {
+            "arguments": [
+              {
+                "name": "study",
+                "value": "'xyz'"
+              }
+            ],
+            "location": "features/steps/filter_games.py:30"
+          },
+          "name": "the user enters the study: 'xyz'",
+          "result": {
+            "duration": 7.724761962890625e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/filter_game_developer.feature:30",
+          "match": {
+            "arguments": [
+              {
+                "name": "criteria",
+                "value": "study"
+              }
+            ],
+            "location": "features/steps/filter_games.py:34"
+          },
+          "name": "the user search games by study",
+          "result": {
+            "duration": 0.00010037422180175781,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/filter_game_developer.feature:31",
+          "match": {
+            "arguments": [
+              {
+                "name": "total",
+                "value": "0"
+              }
+            ],
+            "location": "features/steps/filter_games.py:53"
+          },
+          "name": "0 games will match",
+          "result": {
+            "duration": 5.8650970458984375e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/filter_game_developer.feature:32",
+          "match": {
+            "arguments": [
+              {
+                "name": "message",
+                "value": "No game developed by 'xyz' found"
+              }
+            ],
+            "location": "features/steps/filter_games.py:70"
+          },
+          "name": "the following message is displayed: No game developed by 'xyz' found",
+          "result": {
+            "duration": 5.888938903808594e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "gamesByDeveloper"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/filter_game_developer.feature:3",
+  "name": "Search games by developer",
+  "status": "passed",
+  "tags": []
+}
+]

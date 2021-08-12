@@ -1,0 +1,313 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/filter_game_ratings.feature:6",
+      "name": "Filter games that contain 'M,T' as their rate",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_ratings.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/filter_games.py:9"
+          },
+          "name": "a set of games",
+          "result": {
+            "duration": 0.000186920166015625,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "NAME",
+              "RELEASE DATE",
+              "DEVELOPER",
+              "RATE"
+            ],
+            "rows": [
+              [
+                "The Witcher 3: Wild Hunt",
+                "2015",
+                "CD Projekt",
+                "M"
+              ],
+              [
+                "Splatoon",
+                "2016",
+                "Nintendo",
+                "T"
+              ],
+              [
+                "Super Smash Bros. Ultimate",
+                "2018",
+                "Bandai Namco Studios",
+                "E"
+              ],
+              [
+                "The Last of Us",
+                "2013",
+                "Naughty Dog",
+                "M"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_ratings.feature:13",
+          "match": {
+            "arguments": [
+              {
+                "name": "ratings",
+                "value": "M,T"
+              }
+            ],
+            "location": "features/steps/filter_games.py:26"
+          },
+          "name": "the user enters the ratings: M,T",
+          "result": {
+            "duration": 9.059906005859375e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/filter_game_ratings.feature:14",
+          "match": {
+            "arguments": [
+              {
+                "name": "criteria",
+                "value": "ratings"
+              }
+            ],
+            "location": "features/steps/filter_games.py:34"
+          },
+          "name": "the user search games by ratings",
+          "result": {
+            "duration": 0.0001494884490966797,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/filter_game_ratings.feature:15",
+          "match": {
+            "arguments": [
+              {
+                "name": "total",
+                "value": "3"
+              }
+            ],
+            "location": "features/steps/filter_games.py:53"
+          },
+          "name": "3 games will match",
+          "result": {
+            "duration": 7.104873657226562e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/filter_game_ratings.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/filter_games.py:58"
+          },
+          "name": "the names of these games are",
+          "result": {
+            "duration": 6.604194641113281e-05,
+            "status": "passed"
+          },
+          "step_type": "then",
+          "table": {
+            "headings": [
+              "NAME"
+            ],
+            "rows": [
+              [
+                "The Witcher 3: Wild Hunt"
+              ],
+              [
+                "Splatoon"
+              ],
+              [
+                "The Last of Us"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/filter_game_ratings.feature:21",
+          "match": {
+            "arguments": [
+              {
+                "name": "message",
+                "value": "3 games were found."
+              }
+            ],
+            "location": "features/steps/filter_games.py:70"
+          },
+          "name": "the following message is displayed: 3 games were found.",
+          "result": {
+            "duration": 6.842613220214844e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "gamesByRatings"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/filter_game_ratings.feature:24",
+      "name": "Filter games by ratings without finding result",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_ratings.feature:25",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/filter_games.py:9"
+          },
+          "name": "a set of games",
+          "result": {
+            "duration": 8.106231689453125e-05,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "NAME",
+              "RELEASE DATE",
+              "DEVELOPER",
+              "RATE"
+            ],
+            "rows": [
+              [
+                "The Witcher 3: Wild Hunt",
+                "2015",
+                "CD Projekt",
+                "M"
+              ],
+              [
+                "Splatoon",
+                "2016",
+                "Nintendo",
+                "T"
+              ],
+              [
+                "Super Smash Bros. Ultimate",
+                "2018",
+                "Bandai Namco Studios",
+                "E"
+              ],
+              [
+                "The Last of Us",
+                "2013",
+                "Naughty Dog",
+                "M"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Given",
+          "location": "features/filter_game_ratings.feature:31",
+          "match": {
+            "arguments": [
+              {
+                "name": "ratings",
+                "value": "'xyz'"
+              }
+            ],
+            "location": "features/steps/filter_games.py:26"
+          },
+          "name": "the user enters the ratings: 'xyz'",
+          "result": {
+            "duration": 7.104873657226562e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/filter_game_ratings.feature:32",
+          "match": {
+            "arguments": [
+              {
+                "name": "criteria",
+                "value": "ratings"
+              }
+            ],
+            "location": "features/steps/filter_games.py:34"
+          },
+          "name": "the user search games by ratings",
+          "result": {
+            "duration": 0.00010704994201660156,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/filter_game_ratings.feature:33",
+          "match": {
+            "arguments": [
+              {
+                "name": "total",
+                "value": "0"
+              }
+            ],
+            "location": "features/steps/filter_games.py:53"
+          },
+          "name": "0 games will match",
+          "result": {
+            "duration": 5.459785461425781e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/filter_game_ratings.feature:34",
+          "match": {
+            "arguments": [
+              {
+                "name": "message",
+                "value": "No game with the specified rating was found."
+              }
+            ],
+            "location": "features/steps/filter_games.py:70"
+          },
+          "name": "the following message is displayed: No game with the specified rating was found.",
+          "result": {
+            "duration": 5.555152893066406e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "gamesByRatings"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/filter_game_ratings.feature:3",
+  "name": "Search games by raiting",
+  "status": "passed",
+  "tags": []
+}
+]
